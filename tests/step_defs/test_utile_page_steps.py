@@ -32,13 +32,11 @@ def search_element(browser):
 def search_cautare(browser):
     utile = Utils(browser)
     utile.get_cautare()
-    #utile.get_pijama()
 
 @when('searching element pijama')
 def search_cautare(browser):
     utile = Utils(browser)
     utile.get_pijama()
-
-
+    #utile.text_cautare()
 
 

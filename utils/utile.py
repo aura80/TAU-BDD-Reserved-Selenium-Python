@@ -23,6 +23,9 @@ class Utils:
     TEXT_COS = (By.CSS_SELECTOR, '.headline__HeadlineComponent-sc-1b12ysc-0.gKokaC')
     TEXT_PIJAMA = (By.CSS_SELECTOR, '.styled__StyledChip-sc-1w6uiwa-0.kDlZCJ.popular-chip:nth-child(4)')
 
+    CAUTARE_TEXT = (By.CSS_SELECTOR, '.action-btn__ActionBtn-zbpc1m-1.fvxYdz')
+
+
 
     def __init__(self, browser):
         self.browser = browser
@@ -74,5 +77,11 @@ class Utils:
     def get_pijama(self):
         self.browser.find_element(*self.TEXT_PIJAMA).click()
         time.sleep(2)
+
+    def text_cautare(self):
+        assert self.browser.find_element(*self.CAUTARE_TEXT).text == 'Căutare', 'Not search'
+
+
+
 
 
