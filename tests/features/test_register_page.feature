@@ -2,7 +2,7 @@ Feature: register on reserved website
 
     Scenario: test register successfully
         Given open the register page
-        When the user type email "trrtzzzzzzzzzzzzzzzzzzzzzz@yahoo.com"
+        When the user type email "trrtzzzzzzzzzzzzzzzzzzzzzzz@yahoo.com"
         And the user type firstname "ion"
         And the user type lastname "ion"
         And the user type password "Start123"
@@ -13,7 +13,7 @@ Feature: register on reserved website
 
     Scenario: test register successfully
         Given open the register page
-        When the user type email "aaep8@yahoo.com"
+        When the user type email "aaep9@yahoo.com"
         And the user type firstname "ion"
         And the user type lastname "ion"
         And the user type password "Start123"
