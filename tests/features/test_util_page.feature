@@ -5,3 +5,4 @@ Feature: automated register on reserved website
         When adding sneakers to the cart
         When finding the next picture
         When accessing the menu
+        Then validating the mail

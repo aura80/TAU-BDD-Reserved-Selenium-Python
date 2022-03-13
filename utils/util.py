@@ -1,10 +1,6 @@
 import time
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
-from pages.register_page import RegisterPage
-import random
-import string
+import re
 
 class AddCart:
     # URL
@@ -37,3 +33,9 @@ class AddCart:
     def get_color(self):
         self.browser.find_element(*self.COLOR_CLICK)    #.click()
         time.sleep(2)
+
+    def validate_mail(self, sir_validare):
+        sablon = "^[a-zA-Z0-9-_]+@[a-zA-Z0-9]+.[a-z]{1,3}$"
+        if re.match(sablon, sir_validare):
+            return True
+        return False

@@ -26,3 +26,10 @@ def find_next(browser):
 def find_next(browser):
     util = AddCart(browser)
     util.get_color()
+
+@then('validating the mail')
+def find_next(browser):
+    util = AddCart(browser)
+    util.validate_mail("aaav9@yahoo.com")
+
+
