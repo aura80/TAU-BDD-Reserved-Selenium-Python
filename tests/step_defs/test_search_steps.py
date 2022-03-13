@@ -13,6 +13,6 @@ def open_page(browser):
 @when('we wrote pijama "<pijama>" in the search field')
 def check_email(browser, pijama):
     negative = SearchTests(browser)
-    negative.search_click(pijama)
+    negative.search_pijama_click(pijama)
 
 
