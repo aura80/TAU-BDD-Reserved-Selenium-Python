@@ -1,6 +1,3 @@
-from functools import partial
-import time
-
 from pytest_bdd import scenarios, when, then, given, parsers
 from utils.negative import NegativeTests
 
